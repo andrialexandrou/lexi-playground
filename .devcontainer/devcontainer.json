@@ -1,7 +1,7 @@
 {
   "name": "Lexi Demo Environment",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
-  "postCreateCommand": "chmod +x /workspaces/lexi-playground/release/v1.0.0/lexi-linux && sudo ln -s /workspaces/lexi-playground/release/v1.0.0/lexi-linux /usr/local/bin/lexi",
+  "postCreateCommand": "mkdir -p /tmp/lexi && curl -L https://github.com/andrialexandrou/lexi/raw/main/release/v1.0.0/lexi-linux -o /tmp/lexi/lexi-linux && chmod +x /tmp/lexi/lexi-linux && sudo ln -s /tmp/lexi/lexi-linux /usr/local/bin/lexi",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {
       "version": "lts"

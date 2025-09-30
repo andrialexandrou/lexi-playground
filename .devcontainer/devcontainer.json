@@ -1,7 +1,7 @@
 {
   "name": "Lexi Demo Environment",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "postCreateCommand": "chmod +x /workspaces/lexi/release/v1.0.0/lexi-linux && sudo ln -s /workspaces/lexi/release/v1.0.0/lexi-linux /usr/local/bin/lexi",
+  "postCreateCommand": "curl -L https://github.com/andrialexandrou/lexi/raw/main/release/v1.0.0/lexi-linux -o /tmp/lexi && chmod +x /tmp/lexi && sudo mv /tmp/lexi /usr/local/bin/lexi",
   "customizations": {
     "vscode": {
       "settings": {

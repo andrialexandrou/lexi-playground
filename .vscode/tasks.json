@@ -1,0 +1,95 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Lexi: Compile to JavaScript",
+      "type": "shell",
+      "command": "lexi",
+      "args": [
+        "compile",
+        "${file}",
+        "--target",
+        "javascript"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Lexi: Compile to Python",
+      "type": "shell",
+      "command": "lexi",
+      "args": [
+        "compile",
+        "${file}",
+        "--target",
+        "python"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Lexi: Compile to Rust",
+      "type": "shell",
+      "command": "lexi",
+      "args": [
+        "compile",
+        "${file}",
+        "--target",
+        "rust"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Lexi: Compile to Go",
+      "type": "shell",
+      "command": "lexi",
+      "args": [
+        "compile",
+        "${file}",
+        "--target",
+        "go"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Lexi: Compile to SQL",
+      "type": "shell",
+      "command": "lexi",
+      "args": [
+        "compile",
+        "${file}",
+        "--target",
+        "sql"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "Lexi: Compile and Run (JavaScript)",
+      "type": "shell",
+      "command": "lexi",
+      "args": [
+        "compile",
+        "${file}",
+        "--target",
+        "javascript",
+        "--run"
+      ],
+      "group": "test"
+    },
+    {
+      "label": "Lexi: Compile and Run (Python)",
+      "type": "shell",
+      "command": "lexi",
+      "args": [
+        "compile",
+        "${file}",
+        "--target",
+        "python",
+        "--run"
+      ],
+      "group": "test"
+    }
+  ]
+}

@@ -90,6 +90,24 @@
         "--run"
       ],
       "group": "test"
+    },
+    {
+      "label": "Lexi: Compile to HTML",
+      "type": "shell",
+      "command": "lexi compile ${file} --target html",
+      "group": "build"
+    },
+    {
+      "label": "Lexi: Compile to CSS",
+      "type": "shell",
+      "command": "lexi compile ${file} --target css",
+      "group": "build"
+    },
+    {
+      "label": "Lexi: Compile to TypeScript",
+      "type": "shell",
+      "command": "lexi compile ${file} --target typescript",
+      "group": "build"
     }
   ]
 }
